@@ -35,7 +35,11 @@ variable1 = 45
 //podemos decir el tipo de la variable al mismo tiempo
 //que la declaramos
 var variableString : String = "Esto sería una frase"
-//una de las vetajas del "auzcar" es que no hace falta poner ";"
+var numeroDouble = 70;//este numero seria un Int
+var numeroDouble2 = 70.0//este numero SI que seria un double
+var numeroDouble3 : Double = 70;//tambien seria un double
+
+//una de las vetajas del "azucar" es que no hace falta poner ";"
 
 print(maximoNumeroDeIntentos)
 print(variable1)
@@ -108,6 +112,108 @@ print(tupla2)
 //Podemos cambiar el valor de una tupla
 tupla2.2 = 40//edad de hommer a 40
 print(tupla2)
+
+//Podemos crear tuplas con tipos por defecto
+var qq : (Int, String, Double) = (1,"Bart",45.5)
+print(qq)
+
+// Esto daría error
+//qq = (2,"Marge","pepe")
+
+//Algunas operaciones con tuplas
+//Pattern Matching
+//Asignacion de variable muy flexible, donde indicamos el patros al compilador
+//y el compilador se las busca para encajar los valores donde sea posible
+
+//fijemonos el la tupla de hommer
+//estamos creando 4 variables nuevas y swift intenta encajar cada valor de la
+//tupla2 a cada una de las variables nuevas
+var (nombre,apellidos,edad, peso) = tupla2
+print(nombre)
+print(apellidos)
+print(edad)
+print(peso)
+
+peso = 110
+print(tupla2)
+//para cambiar el peso de la tupla
+tupla2.3 = peso
+tupla2.3 = 110
+
+//si quereis extraer solamente X valores de una tupla unas variables, podemos usar "_"
+var (nombre2,_,edad2,_,_) = tupla3
+print(nombre2)
+print(edad2)
+
+//Optionals
+//Utilizaremos opcionales cuando una variable pueda no tener valor, es decir, apunte
+//a nulo, en swift nulo se representa por "nil". En una variable normal, que no sea optional
+//no podemos apuntarla a "nil
+//var variableNula : String = nil //error porque es una variable normal, es decir, NO es optional
+
+//Para crear un optinal tenemos varias maneras
+//podemos usar ?, de esta manera ya podemos tener en una variable valores nulos (nil)
+var variableNula : String?//se pone "?" despues del tipo
+variableNula = nil
+variableNula = "Valor de la variable"
+
+//En swift todo es un objeto, por lo que si creamos una variable entera sufre
+//la misma problematica con los optionals
+var numeroNulo : Int?
+numeroNulo = 34
+numeroNulo = nil
+
+var numero3 = 45;
+//numero3 = nil //error porque por defecto las variables NO son optinal
+print(type(of: numeroNulo))
+print(type(of: numero3))
+
+//El concepto de optinal esta muy ligado al concepto de "envoltorio" o en ingles
+//tipo "wrapper". Un objeto tipo wrapper es un objeto que envuelve a otro objeto
+
+//Podemos tener problemas en caso de que queramos trabajar con variables optionales y variables
+//que no lo sean
+var variableNormal : String = "Esto es un String"
+//No podemos apuntar directamente desde una variable normal a una variable optional
+//variableNormal = variableNula //Error
+//Si que podemos apuntar con una variable optional a una variable normal
+variableNula = variableNormal
+//print(variableNula)
+
+//Como podemos solucionarlo?
+//Tenemos que hacer un "unwrapper" o "desenvolver la variable optional"
+//poniendo "!" al final de la variable optional
+variableNormal = variableNula!
+print(variableNormal)
+//ojo con valores nulos!
+variableNula = nil
+//la siguiente linea no daría error en tiempo de compilacion, pero si lo daria
+//en tiempo de ejecucion, así ojo con los posibles nulos
+//variableNormal = variableNula!
+
+//Podemos hacer que los optionals hagan un "auto-unwrapper"
+var variableAutoUnwrapper : String! = "Pepe" //hacemos un optional auto-unwrapper
+variableNormal = variableAutoUnwrapper //ahora no tengo que hacer un wrapper especifico
+                                    //lo hace de manera automatica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
