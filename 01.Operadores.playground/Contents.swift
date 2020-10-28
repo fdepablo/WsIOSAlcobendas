@@ -38,6 +38,31 @@ let tieneCabecera = true
 var alturaColumna = anchura + ( tieneCabecera ? 50 : 20)
 print(alturaColumna)//90
 
+//operador Nil-coalescing (Nil-fusionado)
+//Sintaxis (a ?? b)
+//Se utiliza mucho con optionals
+//En caso de que el optional "a" tenga un valor, entonces devuelve el valor de "a"
+//En caso de que el optional "a" sea nulo, entonces devuelve el valor de "b"
+let colorPorDefecto = "Azul"
+var colorDefinidoPorUsuario : String?//se inicializa nil
+colorDefinidoPorUsuario = "Verde"
+
+var color = (colorDefinidoPorUsuario ?? colorPorDefecto)
+print(color)
+
+//operadores logicos
+//logical NOT (!variable)
+//logical AND (variable1 && variable2)
+//logical OR (variable1 || variable2)
+var verdad = true
+var mentira = !verdad
+print(verdad)
+print(mentira)
+print(verdad && mentira)
+print(verdad || mentira)
+
+
+
 
 
 
