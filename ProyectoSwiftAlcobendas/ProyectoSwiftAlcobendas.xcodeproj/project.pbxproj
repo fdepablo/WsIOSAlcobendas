@@ -1,0 +1,77 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		FB81815325542B4F0000CDE3 /* 00.Variables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 00.Variables.playground; sourceTree = "<group>"; };
+		FB81815425542B4F0000CDE3 /* 02.Types.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 02.Types.playground; sourceTree = "<group>"; };
+		FB81815525542B4F0000CDE3 /* 01.Operadores.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 01.Operadores.playground; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		FB81814B25542B2D0000CDE3 = {
+			isa = PBXGroup;
+			children = (
+				FB81815325542B4F0000CDE3 /* 00.Variables.playground */,
+				FB81815525542B4F0000CDE3 /* 01.Operadores.playground */,
+				FB81815425542B4F0000CDE3 /* 02.Types.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		FB81814C25542B2D0000CDE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+			};
+			buildConfigurationList = FB81814F25542B2D0000CDE3 /* Build configuration list for PBXProject "ProyectoSwiftAlcobendas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB81814B25542B2D0000CDE3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		FB81815025542B2D0000CDE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FB81815125542B2D0000CDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB81814F25542B2D0000CDE3 /* Build configuration list for PBXProject "ProyectoSwiftAlcobendas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB81815025542B2D0000CDE3 /* Debug */,
+				FB81815125542B2D0000CDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB81814C25542B2D0000CDE3 /* Project object */;
+}
